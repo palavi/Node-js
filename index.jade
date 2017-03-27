@@ -1,0 +1,23 @@
+- var List = ['1', '2', '3']
+html
+    head
+        title Myapp
+    //-inject:js
+    script(src="/js/bootstrap.js")
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/jquery.js")
+    //-endinject
+    //-inject:css
+    link(rel="stylesheet", href="/css/1-col-portfolio.css")
+    link(rel="stylesheet", href="/css/bootstrap.css")
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    //-endinject
+
+        
+    body(class='myclass')
+        h1 My Myapp
+        p
+            h3(id='myId') Sub Heading
+        ul
+            each val in List
+                li= val

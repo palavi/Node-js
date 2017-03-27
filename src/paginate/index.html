@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+    <head>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/8.2.0/styles/ag-grid.css"/>-->
+        
+    </head>
+<body style="height: 100%;">
+    <div style="box-sizing: border-box; padding-top: 30px; height: 100%;">
+        <div style="height: 100%;" id="myGrid" class="ag-fresh"></div>
+    </div>
+    <div style="position: fixed; top: 0px; left: 0px; padding: 10px;">
+        Page Size:
+        <select onchange="onPageSizeChanged(this.value)">
+            <option value="10">10</option>
+            <option value="100">100</option>
+            <option value="500" selected>500</option>
+            <option value="1000">1000</option>
+        </select>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/8.2.0/ag-grid.js"> </script>
+    <script src="index.js"> </script>
+</body>
+</html>
